@@ -12,32 +12,31 @@
 
 ### 2. 주요 기능
 
-- **공금 모으기:** 여행을 함께하는 친구들을 초대해 여행 비용을 모을 수 있는 기능
-- **투명한 자금 관리:** 공금의 입출금 내역을 모든 참여자가 실시간으로 확인 가능
-- **가계부:** 일 별 사용 금액 조회, 카테고리 별 사용 금액 조회
-- **공금 결제 및 이체:** 여행 중 발생하는 비용을 공금에서 바로 결제
-- **환전 기능:** 공금 통장을 통해 환전을 편하게 할 수 있는 기능
-- **챗봇 기능:** RAG 기술을 도입하여 정확한 정보 검색 및 사용자 맞춤형 응답 제공
+- **여행 일정 추천**  
+  사용자의 선택에 따라 여행 경비와 일정을 추천한다.
+  여행 중 발생할 수 있는 경비와 일정을 분석하고, 추천하는 기능을 제공한다.
 
-<br>
+- **RAG 기반 챗봇**  
+ LLM을 기반으로 하면서도  **RAG (Retrieval Augmented Generation)** 기술을 결합한 방식.
+ 사용자로부터 입력을 받으면, 관련된 데이터를 VectorDB에서 검색하고 이를 바탕으로 LLM을 통해 답변을 생성한다.
+ 이 방식은 검색된 데이터와 생성된 답변을 결합하여 더 정확하고 관련성 높은 정보를 제공한다.
 
-<br>
-
-## 🖥 기술스택
-
-### 1. 아키텍처
-
-<img src="./exec/img/아키텍처.png">
 
 <br>
 
 ### 2. 기술스택
 
-[![My Skills](https://skillicons.dev/icons?i=spring,fastapi,react,ts,tailwind,mysql)](https://skillicons.dev)
-<br>
-[![My Skills](https://skillicons.dev/icons?i=docker,jenkins,idea,vscode,postman,git,gitlab,notion,figma)](https://skillicons.dev)
+- **RAG (Retrieval Augmented Generation)**  
+  LLM을 파인튜닝하지 않고 외부 데이터를 지속적으로 반영하여 최신성을 유지하며, 할루시네이션 문제를 최소화.
+  은행과 같은 법적 요구 사항이 높은 분야에 적합한 기술
 
-<br>
+- **Vector DB**  
+  검색된 데이터를 임베딩하여 빠르게 검색하고 분석할 수 있는 효율적인 데이터 관리 방법을 제공하여 최신성 문제를 해결.
+
+- **파이썬 (Python)**  
+  챗봇 로직 개발에 사용되며, 유연한 개발 환경을 제공합니다.
+
+
 <br>
 
 ## 📱챗봇 시연 움짤
@@ -53,10 +52,4 @@
 | 📃 여행장소 설문                                                   | 🗺 여행장소 지도                                                    |
 
 <br>
-<br>
 
-## 🔧 ERD
-
-<img src="./exec/img/erd.png" />
-
-<br>
