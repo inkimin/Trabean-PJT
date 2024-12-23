@@ -1,5 +1,3 @@
-# Trabean-PJT
-
 # <img src="./exec/img/beans.png" width="50"> Trabean
 
 ## <img src="./exec/img/beanbag.png" width="25"> 프로젝트 소개
